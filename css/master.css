@@ -1,0 +1,15 @@
+.box{
+  border: 1px solid black;
+  height: 100%;
+}
+
+.box [class^="box"]{
+  border: 1px solid green;
+  height:50%;
+  width: 100%;
+
+}
+
+.boxleft{
+  background-color: red;
+}
