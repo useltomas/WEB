@@ -1,15 +1,14 @@
-.box{
-  border: 1px solid black;
-  height: 100%;
-}
 
-.box [class^="box"]{
+.row{
+  margin: 0;
   border: 1px solid green;
-  height:50%;
-  width: 100%;
-
+  margin-bottom: 20px;
 }
 
-.boxleft{
-  background-color: red;
+.container{
+  width: 100%;
+}
+
+.row .col{
+  padding: 0px;
 }
