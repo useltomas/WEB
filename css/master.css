@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 .row{
   margin: 0;
@@ -24,19 +23,3 @@
 .profilis2 img{
   width: 100%;
 }
-=======
-
-.row{
-  margin: 0;
-  border: 1px solid green;
-  margin-bottom: 20px;
-}
-
-.container{
-  width: 100%;
-}
-
-.row .col{
-  padding: 0px;
-}
->>>>>>> 542bb8c0840792e6b6bd87a593723525f4f9eb50
