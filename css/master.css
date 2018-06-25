@@ -1,15 +1,25 @@
-.box{
-  border: 1px solid black;
-  height: 100%;
+
+.row{
+  margin: 0;
+  border: 1px solid grey;
+  margin-bottom: 20px;
 }
 
-.box [class^="box"]{
-  border: 1px solid green;
-  height:50%;
+.container{
   width: 100%;
-
 }
 
-.boxleft{
-  background-color: red;
+.row .col{
+  padding: 0px;
+}
+
+.profilis2{
+  border-right: 3px solid grey;
+}
+.profilis1 img{
+  width: 100%;
+}
+
+.profilis2 img{
+  width: 100%;
 }
