@@ -42,7 +42,7 @@
             padding: 20px;
         }
 
-        #myBtn {
+        .mygtukas {
             width: 200px;
             font-size: 18px;
             padding: 10px;
@@ -50,29 +50,58 @@
             background: #000;
             color: #fff;
             cursor: pointer;
+            font-family: Impact, "Charcoal", sans-serif;
         }
 
-        #myBtn:hover {
+        .mygtukas:hover {
             background: #ddd;
             color: black;
         }
+
+        .tekstas h1{
+          font-family: Impact, "Charcoal", sans-serif;
+        }
+
+        .tekstas p{
+          font-family: "Courier New", Courier, monospace;
+        }
+
+
+        nav {
+          position: relative;
+          z-index: 5;
+
+        }
+
+        .page-footer {
+          padding-top: 0px;
+          margin-top: 20px;
+          width: 100%;
+        }
+
+        .content .tekstas h1 p{
+          z-index: 20;
+        }
+
+        video {
+          z-index: -1;
+        }
+
+
+
+
+
       </style>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
+
+
+
+
+
     <body>
-
-      <video autoplay muted loop id="myVideo">
-        <source src="video/salcininkai.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-      </video>
-
-      <div class="content">
-        <h1>Heading</h1>
-        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-      </div>
 
       <nav>
         <div class="nav-wrapper black">
@@ -87,6 +116,70 @@
         </div>
       </nav>
 
+
+
+   <!-- Modal Structure -->
+       <div id="modal1" class="modal">
+         <div class="modal-content">
+
+         </div>
+         <div class="modal-footer">
+           <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+         </div>
+       </div>
+
+
+
+
+
+      <div class="parallax-container">
+       <div class="parallax">
+         <video autoplay muted loop id="myVideo">
+              <source src="video/salcininkai.mp4" type="video/mp4">
+                Tavo naršyklė tokia sena, kad net kompai dar neveikė, kai jinai buvo sukurta.
+          </video>
+          <div class="content">
+            <div class="tekstas">
+              <h1>Šalčininkai</h1>
+              <p>Šalčininkų rajono savivaldybė yra įsikūrusi Vilniaus apskrities pietrytinėje dalyje, Baltarusijos pasienyje. Rajono plotas 1491,4 kv. km. Administracinis centras... Loreeeeeeeem!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section white">
+        <div class="row container">
+            <button id="myBtn" class="mygtukas" onclick="myFunction()">Pause</button>
+            <button class="mygtukas" onclick="mygtukasIGalerija()">Galerija</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <footer class="page-footer black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2024 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
       <ul class="sidenav" id="mobile-demo">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="offers.html">Pasiulymai</a></li>
@@ -94,74 +187,6 @@
         <li><a href="mobile.html">Mobile</a></li>
       </ul>
 
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/varena.jpg"></div>
-      </div>
-      <div class="section white">
-        <div class="naujienos" style="text-align:center">
-          <h2>Naujienos</h2>
-        </div>
-        <div class="row container">
-          <div class="col s12 m12">
-            <div class="box">
-              <h3>Rekultivuojami Varėnos rajone esantys karjerai</h3>
-              <p>Varėnos rajono savivaldybės administracija įgyvendina projektą „Kraštovaizdžio formavimas ir tvarkymas Varėnos r. savivaldybėje (I etapas)“. Jo metu bus rekultivuoti du karjerai Marcinkonių kaime: buvęs smėlio karjeras Gaidžių gatvėje ir smėlio–žvyro karjeras Naujalių gatvėje, taip pat buvęs smėlio–žvyro karjeras Panaros kaime. Šis projektas įgyvendinamas vykdant 2014 m. Aplinkos ministerijos patvirtintą Valstybinių pažeistų žemių 2014-2020 m. tvarkymo planą, kuriuo Varėnos rajono savivaldybė, kaip ir kitos šalies savivaldybės, įpareigota iki 2020 m. parengti ir įgyvendinti pažeistų žemių tvarkymo projektus.
-                <br>
-                <br>
-              <a href="pirmasStraipsnis.html">Skaityti daugiau...</a>
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="box">
-              <h3>Kviečiame į Vasaros šventę Varėnoje!</h3>
-              <p>Birželio 22 d., 21 val. visus kviečiame į Vasaros šventę prie Karloniškės ežero, šalia Varėnos kultūros centro. Dalyvaus Varėnos kultūros centro kolektyvai: folkloro ansamblis „Žeiria“, šokių kolektyvas „Kadagys“, liaudiškos muzikos kapela „Paparcis“, Perlojos kultūros centro liaudiškos muzikos kapela, tradicinė kapela „Varėnos krašto muzikantai“, solistė Ugnė Martusevičiūtė, grupė „The Groovy Group“, jaunimo grupė „Grūda“ ir grupė „Varėniai“ bei TV projekto „2 BARAI“ muzikinis duetas Žygis ir Gabija. Dainuosime, šoksime prie laužo, plukdysime vainikėlius, šėlsime diskotekoje su DJ.PRICKER. Visų laukia daug prizų ir siurprizų, o vaikų – batutai.  Ateikite į kupiną staigmenų ir pramogų šventę!
-                <br>
-              <a target="_blank" href="images/vasaros-svente-patvirtintas.jpg">Programa...</a>
-            </p>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="box">
-              <h3>Intensyviai vykdomi J. Basanavičiaus gatvės atnaujinimo darbai</h3>
-              <p>Varėnos mieste intensyviai vykdomi J. Basanavičiaus gatvės atnaujinimo darbai. Įgyvendinant iš Europos Sąjungos fondų ir Kelių priežiūros ir plėtros programos finansuojamus projektus, šios gatvės ruože nuo Perlojos gatvės iki M.K. Čiurlionio gatvės bus įrengti paviršinių nuotekų surinkimo tinklai, nauja asfalto dangos konstrukcija, dviračių takas, poilsio zonos, atnaujintas gatvės apšvietimas, šaligatviai, vandentiekio ir nuotekų tinklai.
-                <br>
-                <br>
-                <br>
-              <a href="antrasStraipsnis.html">Skaityti daugiau...</a>
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m12">
-            <div class="box">
-              <h3>Dėl sausros skelbiama ekstremali situacija</h3>
-              <p>Birželio 13 d. Varėnos rajono savivaldybėje posėdžiavo Ekstremalių situacijų komisija, kuri, vadovaudamasi oficialiais Lietuvos hidrometeorologijos tarnybos birželio 13 d. viešai skelbiamais <a class="meteo" href="http://www.meteo.lt/lt/home">(www.meteo.lt)</a>  duomenimis, sausros padariniais žemės ūkyje ir žemdirbių prašymu skelbti ekstremaliąją situaciją, nusprendė skelbti ekstremaliąją situaciją savivaldybės teritorijoje.  Varėnos rajono savivaldybės administracijos direktoriaus 2018 m. birželio 13 d. įsakymu DV-651 savivaldybės teritorijoje nuo 2018 m. birželio 13 d. 11 val. dėl sausros skelbiama ekstremali situacija. Ekstremaliosios situacijos operacijų vadovu skiriamas Varėnos rajono savivaldybės administracijos Žemės ūkio ir kaimo reikalų skyriaus vedėjas Irmantas Laniauskas. </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/grybai.jpg"></div>
-      </div>
-
-      <footer class="page-footer black">
-              <div class="container">
-                <div class="row">
-                  <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                  </div>
-                  <div class="col l4 offset-l2 s12">
-                  </div>
-                </div>
-              </div>
-              <div class="footer-copyright">
-                <div class="container">
-                © 2024 Copyright Text
-                  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-              </div>
-      </footer>
 
 
       <script src="jquery/js/jquery-3.3.1.js"></script>
@@ -173,6 +198,13 @@
         $(document).ready(function(){
          $('.sidenav').sidenav();
          $('.parallax').parallax();
+        });
+
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+          $('.modal').modal({});
         });
       </script>
       <script>
@@ -188,6 +220,13 @@
             btn.innerHTML = "Play";
           }
         }
+
+      function mygtukasIGalerija(){
+          window.location.href = 'galerijaSalcininkai.html';
+        };
+
+
+
       </script>
     </body>
   </html>
