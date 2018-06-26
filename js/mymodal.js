@@ -8,4 +8,5 @@ $(".box img").click(function(){
 
 $(".mymodal").click(function(){
   $(".mymodal").css({"display":"none"});
+  $(".mymodalbox").empty();
 })
