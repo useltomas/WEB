@@ -5,6 +5,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link rel="stylesheet" href="css/mymodal.css">
       <style media="screen">
       .box{
         margin-top: 10px;
@@ -16,58 +17,37 @@
       }
       .imagebox{
         margin: 5px;
-        height: 200px;
+        height: 150px;
         overflow: hidden;
       }
-      /* #MainImages {
-              width: 100%;
-              height: 800px;
-           } */
-               #MainImages img {
-                   cursor: pointer;
-                   height:200px;
-               }
-          #Fullscreen {
-               width: 100%;
-               display: none;
-               position:fixed;
-               top:0;
-               right:0;
-               bottom:0;
-               left:0;
-               /* I made a 50% opacity black tile background for this
-               div so it would seem more... modal-y*/
-               background: transparent url('../Images/bgTile_black50.png') repeat;
-           }
-           #Fullscreen img {
-              display: block;
-              width: 100%;
-              margin: 0 auto;
-           }
       </style>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
+    <body>
+      <div class="mymodal">
+        <div class="mymodalbox">
+
+        </div>
+      </div>
 
       <nav>
         <div class="nav-wrapper black">
           <a href="#!" class="brand-logo">VT</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="indexPagrindinis.html">Pradinis</a></li>
+            <li><a href="varena.html">Varėna</a></li>
+            <li><a href="salcininkai.html">Šalčininkai</a></li>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="offers.html">Pasiulymai</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="indexPagrindinis.html">Pradinis</a></li>
+        <li><a href="varena.html">Varėna</a></li>
+        <li><a href="salcininkai.html">Šalčininkai</a></li>
       </ul>
 
       <section class="row">
@@ -160,43 +140,29 @@
           <div class="box">
             <div class="row">
               <div class="col s6 m6">
-                <div class="imagebox" id="MainImages">
-                  <img src="images/baseinasdid1.jpg" alt="" class="myImg">
+                <div class="imagebox">
+                  <img src="images/baseinasdid1.jpg" alt="">
                 </div>
               </div>
               <div class="col s6 m6">
-                <div class="imagebox" id="MainImages">
-                  <img src="images/baseinasdid2.jpg" alt="" class="myImg">
+                <div class="imagebox">
+                  <img src="images/baseinasdid2.jpg" alt="">
                 </div>
               </div>
               <div class="col s6 m6">
-                <div class="imagebox" id="MainImages">
-                  <img src="images/baseinasdid5.jpg" alt="" class="myImg">
+                <div class="imagebox">
+                  <img src="images/baseinasdid5.jpg" alt="">
                 </div>
               </div>
               <div class="col s6 m6">
-                <div class="imagebox" id="MainImages">
-                  <img src="images/baseinasdid4.jpg" alt="" class="myImg">
-                </div>
-              </div>
-              <div class="col s6 m6">
-                <div class="imagebox" id="MainImages">
-                  <img src="images/baseinasdid3.jpg" alt="" class="myImg">
-                </div>
-              </div>
-              <div class="col s6 m6">
-                <div class="imagebox" id="MainImages">
-                  <img src="images/baseinasdid6.jpg" alt=""class="myImg">
+                <div class="imagebox">
+                  <img src="images/baseinasdid4.jpg" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <div id="Fullscreen">
-                  <img src="" alt="" />
-              </div>
 
         <footer class="page-footer black">
                 <div class="container">
@@ -228,20 +194,5 @@
          $('.parallax').parallax();
         });
       </script>
-      <script>
-            $(document).ready(function(){
-                 //your code for stuff should go here
-                 $('#Fullscreen').css('height', $(document).outerWidth() + 'px');
-                 //for when you click on an image
-                 $('.myImg').click(function(){
-                     var src = $(this).attr('src'); //get the source attribute of the clicked image
-                     $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
-                     $('#Fullscreen').fadeIn();
-                 });
-                 $('#Fullscreen').click(function(){
-                     $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image.
-                 });
-            });
-        </script>
     </body>
   </html>

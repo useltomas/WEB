@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link rel="stylesheet" href="css/mymodal.css">
+      <style media="screen">
+      .box{
+        text-align: justify;
+        margin-top: 20px;
+        padding: 10px;
+        /* box-shadow: 0px 0px 5px silver; */
+      }
+      .box img{
+        width: 100%;
+      }
+      </style>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#!" class="brand-logo">VT</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="offers.html">Pasiulymai</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+
+      <section class="row">
+        <div class="col s12 m6">
+          <div class="box">
+            <img src="images/gruda.jpg" alt="">
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="box">
+            <img src="images/gruda2.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+        <div class="box">
+          <p>Grūda – kairysis Merkio intakas. Nuostabios gamtos fone besiraitanti itin vingiuota, o pačiame žemupyje labai srauni ir rėvėta. Grūdos upėje begalės staigių posūkių užvartų , vietinės reikšmės lieptelių, tiltelių, rąstų. Apie 5 km. iki santakos su Merkiu, paskutinės akmenuotos upės atkarpos ramus plaukimas perauga į tikrą šėlsmą, vietomis prilygstantį kalnų upei. Greita srovė ir rėvos neduoda kada nuobodžiauti, kol tave upė tiesiog nepastebimai išplauna į Merkį.
+          Ši upė puikiai itin tinka pavasariniams ar rudeniniams vienos arba dviejų dienų plaukimams.
+          Baidarių maršrutai Grūdos upe driekiasi per Darželius, Marcinkonių plentą ir Puvočių poilsiavietę. </p>
+          <br>
+          <a href="baidares.html">Atgal...</a>
+        </div>
+
+
+        <footer class="page-footer black">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5 class="white-text">Footer Content</h5>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright">
+                  <div class="container">
+                  © 2024 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                  </div>
+                </div>
+        </footer>
+
+      <script src="jquery/js/jquery-3.3.1.js"></script>
+      <script src="jquery/js/master.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="js/mymodal.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $('.parallax').parallax();
+        });
+
+      </script>
+    </body>
+  </html>
