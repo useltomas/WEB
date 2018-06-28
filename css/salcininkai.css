@@ -58,6 +58,12 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+.brand-logo{
+  margin:10px;
+
+}
+
+
 
 nav {
   position: relative;
@@ -67,13 +73,14 @@ nav {
 
 .page-footer {
   padding-top: 0px;
-  margin-top: 20px;
   width: 100%;
+  position: relative;
 }
 
-.content .tekstas h1 p{
-  z-index: 20;
+.content {
+  position:relative;
 }
+
 
 video {
   z-index: -1;
